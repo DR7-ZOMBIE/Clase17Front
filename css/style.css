@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.header {
+    width: 100%;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, .5);
+}
+
+.paragraph {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    background-color: #1CD1B0;
+}
+
+.paragraph__text {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    width: 100%;
+    height: 5rem;
+    background: #00669F;
+    display: flex;
+    align-items: center;
+}
+
+.title__text {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+.circle {
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+
+    position: fixed;
+    top: 50%;
+    right: 2rem;
+
+    background: #00669F;
+    border-radius: 100%;
+    cursor: pointer;
+
+    z-index: 1;
+}
+
+.circle__more {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    height: 85vh;
+    max-width: 1400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.card {
+    width: 18.75rem;
+    height: 37.5rem;
+    padding-bottom: 1rem;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .25);
+    border-radius: 1rem 1rem 0 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.background {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.background__img {
+    width: 300px;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.background__person {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.icon {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    cursor: pointer;
+}
+
+.background__person-img {
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 100%;
+}
+
+.content {
+    width: 100%;
+    padding: 5rem .5rem 0;
+}
+
+.content__title {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.content__paragraph {
+    padding: 0 .5rem;
+}
+
+.button {
+    width: 100%;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.button__btn {
+    background: #00669F;
+    color: #fff;
+    width: 130px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.footer {
+    width: 100%;
+    padding: 1rem 0;
+
+    background-color: #00669F;
+    color: #fff;
+
+    position: fixed;
+    bottom: 0;
+}
+
+.footer__paragraph {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+
+
+/*
+    * pagina super-heroe 
+*/
+
+.formulario {
+    width: 80%;
+
+    margin: auto;
+
+    background: #00669F;
+
+    color: #fff;
+}
+
+.dividir-formulario {
+    width: 60%;
+    height: 80vh;
+    /* height: auto; */
+
+    margin: auto;
+
+    padding-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.division-uno,
+.division-dos {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    /* agrega espacio entre los hijos */
+}
+
+.inputs {
+    width: 80%;
+    height: 3rem;
+
+    border-radius: .8rem;
+
+    border: none;
+
+    outline: none;
+    /*saca borde al hacer click*/
+
+    padding: 0 1rem;
+}
+
+.text-tarea {
+    height: 7rem;
+    padding-top: 1rem;
+    resize: none;
+    /* deja fijo caja text-tarea*/
+}
+
+.boton-contenedor {
+    width: 100%;
+    text-align: center;
+}
+
+.boton-enviar {
+    padding: 1rem 5rem;
+    background: #1CD1B0;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 1366px) {
+
+    .container {
+        height: auto;
+        max-width: 800px;
+        padding: 1rem 0;
+        row-gap: 1.5rem;
+    }
+
+    .footer {
+        position: relative;
+    }
+}
+
+
+@media screen and (max-width: 1150px) {
+
+    .paragraph__text,
+    .title__text,
+    .footer__paragraph {
+        width: 90%;
+    }
+
+    .main {
+        width: 100%;
+        height: auto;
+    }
+
+    .circle {
+        top: 40%;
+        right: .5rem;
+    }
+
+    .container {
+        width: 90%;
+        padding: 2rem 0;
+        width: 80%;
+        flex-wrap: wrap;
+        row-gap: 2rem;
+    }
+}
+
+button:hover {
+    background: red;
+    border-radius: 100%;
+}
+
+input[type="text"]:focus {
+    border: 10px solid cornflowerblue;
+
+}
+
+input[type="date"]:focus {
+    border: 10px solid black;
+
+}
+
+label::before {
+    content: '✵';
+
+
+}
+textarea:hover {
+    color:orange;
+}

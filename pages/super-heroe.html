@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Añadir super heroe</title>
+</head>
+<body>
+    <main>
+        <form action="#" class="formulario">
+            <fieldset>
+                <legend>Añadí tu super!</legend>
+                <p>Agregá tu personaje favorito completando las opciones</p>
+
+                <section class="dividir-formulario">
+                    <div class="division-uno">
+                        <div>
+                            <label for="username">Nombre</label>
+                            <br>
+                            <input class="inputs" type="text" name="name" id="username">
+                        </div>
+                        <div>
+                            <label for="username">Fecha</label>
+                            <br>
+                            <input class="inputs" type="date" name="date" id="userdate">
+                        </div>
+                        <div>
+                            <textarea class="inputs text-tarea" name="description" id="description-id" cols="30" rows="10">Descripción</textarea>
+                        </div>
+                    </div>
+                    <div class="division-dos">
+                        <div>
+                            <label  for="especies">Especie</label>
+                            <br>
+                            <select class="inputs" name="especie" id="especies">
+                                <option value="">Acuatico</option>
+                                <option value="">Aire</option>
+                                <option value="">Fuego</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="userfoto">Añadir foto</label>
+                            <br>
+                            <input type="file" name="foto" id="userfoto">
+                        </div>
+                        <div>
+                            <legend>Poderes</legend>
+                            <div>
+                                <input type="checkbox" name="poder" id="volar">
+                                
+                                <label for="volar">Volar</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="poder" id="supint">
+                                
+                                <label for="supint">Superinteligencia</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="poder" id="rayo-laser">
+                                
+                                <label for="rayo-laser">Vista de rayo láser</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="poder" id="billetera">
+                                
+                                <label for="billetera">Billetera gorda</label>
+                            </div>
+                        </div>
+                        <hr>
+                        <div>
+                            <legend>Tipo de personaje</legend>
+                            <div>
+                                <input type="radio" name="heroes" id="heroe-heroina">
+                                
+                                <label for="heroe-heroina">Héroe / Heroina</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="villanos" id="villano-villana">
+                                
+                                <label for="villano-villana">Villano / Villana</label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="boton-contenedor">
+                    <button class="boton-enviar" type="submit">Añadir</button>
+                </div>
+
+            </fieldset>
+        </form>
+
+
+        <a href="../index.html">Volver</a> <!-- ancla para regresar al index -->
+    </main>
+</body>
+</html>
